@@ -35,7 +35,6 @@ MIDDLEWARE_CLASSES = (
     'slimmer.middleware.CompressHtmlMiddleware',
     'sugar.middleware.debugging.UserBasedExceptionMiddleware',
     'request.middleware.RequestMiddleware',
-    'djangodblog.DBLogMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -66,7 +65,6 @@ INSTALLED_APPS = (
 
   'django_extensions',
   'tagging',
-  'djangodblog',
   'disqus',
   'basic.inlines',
   'basic.blog',
@@ -99,6 +97,7 @@ INSTALLED_APPS = (
   'request',
   
   'portfolio',
+  'gunicorn',
 )
 
 
