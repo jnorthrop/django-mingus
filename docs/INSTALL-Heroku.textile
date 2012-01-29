@@ -1,5 +1,5 @@
 
-h2. Quick Start to get Mingus up and running at Heroku
+h2. Quick Start to get Mingus up and running at Heroku + Gunicorn
 
 The quick start assumes basic familiarity with "vitualenv":http://virtualenv.openplans.org/, "virtualenv wrapper":http://www.doughellmann.com/projects/virtualenvwrapper/.
 
@@ -19,7 +19,7 @@ To get it working locally:
 * ./manage.py loaddata test_data.json
 * ./manage.py runserver -> check that it works
 
-To deploy to Heroku
+To deploy to Heroku:
 * cd blog/django-mingus
 * mv mingus/heroku-requirements.txt requirements.txt
 * git init
@@ -29,8 +29,9 @@ To deploy to Heroku
 * git push heroku master
 * heroku run mingus/manage.py syncdb
 * heroku run mv mingus/local_settings.py.template mingus/local_settings.py
+* heroku run mingus/manage.py loaddata test_data.json <- only if you want to load test data
 
-By default the theme is set to the Basic theme.
+Your installation should be up and running at Heroku. By default the theme is set to the Basic theme.
 
 Django-Mingus also comes with 4 additional themes: Django(green), Minimal (black/white), Dark (black), Basic
 (beige/red), JeffCroft (brown/pink). You can view them "here":http://www.flickr.com/photos/37875916@N07/tags/mingustheme/.
