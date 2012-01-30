@@ -12,14 +12,14 @@ django-robots==0.6.1
 psycopg2==2.4.4
 gunicorn==0.13.4
 
--e git://github.com/clones/django-template-utils.git#egg=template_utils
--e git://github.com/olomix/django-navbar.git#egg=navbar
--e git://github.com/aljosa/django-tinymce.git#egg=django-tinymce
 -e git+git://github.com/django-extensions/django-extensions.git#egg=django_extensions
 -e git+git://github.com/montylounge/django-basic-apps.git#egg=basic
 -e git+git://github.com/zerok/django-flatblocks.git#egg=flatblocks
 -e git+git://github.com/ktonon/django-disqus.git#egg=disqus
+svn+http://django-navbar.googlecode.com/svn/trunk#egg=navbar
+svn+http://django-db-log.googlecode.com/svn/trunk#egg=djangodblog
 -e git+git://github.com/brosner/django-oembed.git#egg=oembded
+svn+http://django-template-utils.googlecode.com/svn/trunk#egg=template_utils
 -e git+git://github.com/montylounge/django-proxy.git#egg=django_proxy
 -e git+git://github.com/mintchaos/django_compressor.git#egg=compressor
 -e git+git://github.com/bartTC/django-markup.git#egg=django_markup
@@ -30,6 +30,7 @@ gunicorn==0.13.4
 -e git+git://github.com/montylounge/django-sugar.git#egg=sugar
 -e git+git://github.com/montylounge/django-quoteme.git#egg=quoteme
 -e hg+https://python-twitter.googlecode.com/hg/#egg=python-twitter
+svn+http://django-tinymce.googlecode.com/svn/trunk/#django-tinymce
 -e git+git://github.com/pydanny/django-wysiwyg.git#egg=django-wysiwyg
 -e git+git://github.com/hbussell/django-slimmer.git#egg=django-slimmer
 -e git+git://github.com/montylounge/django_cropper.git#egg=django-cropper
